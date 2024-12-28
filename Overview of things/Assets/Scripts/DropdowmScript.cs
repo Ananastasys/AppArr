@@ -10,6 +10,8 @@ public class DropdowmScript : MonoBehaviour
     public SpawnMixer spawnMixer; // Ссылка на скрипт миксера
     public SpawnToaster spawnToaster; // Ссылка на скрипт тостера
 
+
+
     void Start()
     {
         // Убедитесь, что dropdown установлен, это важно
@@ -31,25 +33,25 @@ public class DropdowmScript : MonoBehaviour
         {
             case 0: // Выбран "Clock" (первый пункт в списке)
                 if (spawnClock != null)
-                    spawnClock.SpawnSpecificObject(); // Вызываем метод Activate скрипта часов
+                spawnClock.SpawnSpecificObject(); // Вызываем метод SpawnSpecificObject скрипта часов
                 else
                     Debug.LogWarning("SpawnClock not assigned to DropdowmScript script.");
                 break;
             case 1: // Выбран "Lamp" (второй пункт в списке)
                 if (spawnLamp != null)
-                    spawnLamp.SpawnSpecificObject(); // Вызываем метод Activate скрипта лампы
+                spawnLamp.SpawnSpecificObject(); // Вызываем метод SpawnSpecificObject скрипта лампы
                 else
                     Debug.LogWarning("SpawnLamp not assigned to DropdowmScript script.");
                 break;
-            case 2: // Выбран "Lamp" (второй пункт в списке)
+            case 2: // Выбран "Mixer" (третий пункт в списке)
                 if (spawnMixer != null)
-                    spawnMixer.SpawnSpecificObject(); // Вызываем метод Activate скрипта лампы
+                spawnMixer.SpawnSpecificObject(); // Вызываем метод SpawnSpecificObject скрипта миксера
                 else
                     Debug.LogWarning("SpawnMixer not assigned to DropdowmScript script.");
                 break;
-            case 3: // Выбран "Lamp" (второй пункт в списке)
+            case 3: // Выбран "Toaster" (четвертый пункт в списке)
                 if (spawnToaster != null)
-                    spawnToaster.SpawnSpecificObject(); // Вызываем метод Activate скрипта лампы
+                spawnToaster.SpawnSpecificObject(); // Вызываем метод SpawnSpecificObject скрипта тостера
                 else
                     Debug.LogWarning("SpawnToaster not assigned to DropdowmScript script.");
                 break;
