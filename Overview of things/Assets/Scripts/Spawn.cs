@@ -49,8 +49,7 @@ public class Spawn : MonoBehaviour
         if (prefab != null)
         {
             currentSpawnedObject = Instantiate(prefab, spawnPoint.position, spawnPoint.rotation, spawnPoint);
-            //currentSpawnedObject.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f); //Устанавливаем  масштаб, который нужен
-            //currentSpawnedObject.transform.rotation = Quaternion.identity;
+            currentSpawnedObject.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f); //Устанавливаем  масштаб, который нужен
         }
         else
         {
